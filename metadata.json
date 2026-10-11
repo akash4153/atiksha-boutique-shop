@@ -1,0 +1,6 @@
+{
+  "name": "Atiksh Boutique & Atelier",
+  "description": "Luxury Indian couture e-commerce storefront and bespoke tailoring atelier featuring handloom silk sarees, designer anarkalis, bridal lehengas, and custom stitching services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

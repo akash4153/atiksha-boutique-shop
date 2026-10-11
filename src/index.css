@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-tertiary-fixed-variant: #4f4447;
+  --color-tertiary: #20181b;
+  --color-outline-variant: #dac1c2;
+  --color-on-secondary-container: #785a1a;
+  --color-primary-fixed: #ffd9dc;
+  --color-surface-bright: #fcf9f8;
+  --color-error: #ba1a1a;
+  --color-on-secondary: #ffffff;
+  --color-primary-container: #5b1322;
+  --color-background: #fcf9f8;
+  --color-on-tertiary-container: #a19396;
+  --color-on-primary-fixed: #400010;
+  --color-on-background: #1b1b1c;
+  --color-surface-tint: #99434f;
+  --color-surface: #fcf9f8;
+  --color-secondary-container: #fed488;
+  --color-surface-container-low: #f6f3f2;
+  --color-inverse-on-surface: #f3f0ef;
+  --color-inverse-surface: #303030;
+  --color-on-surface: #1b1b1c;
+  --color-surface-variant: #e5e2e1;
+  --color-secondary: #775a19;
+  --color-surface-container-high: #eae7e7;
+  --color-outline: #877273;
+  --color-primary: #3d000f;
+  --color-tertiary-fixed-dim: #d2c3c6;
+  --color-secondary-fixed-dim: #e9c176;
+  --color-error-container: #ffdad6;
+  --color-tertiary-fixed: #efdee2;
+  --color-on-primary-container: #dd7985;
+  --color-on-secondary-fixed: #261900;
+  --color-on-primary-fixed-variant: #7b2b39;
+  --color-on-error-container: #93000a;
+  --color-inverse-primary: #ffb2ba;
+  --color-surface-container-highest: #e5e2e1;
+  --color-primary-fixed-dim: #ffb2ba;
+  --color-secondary-fixed: #ffdea5;
+  --color-on-error: #ffffff;
+  --color-on-tertiary: #ffffff;
+  --color-surface-container: #f0eded;
+  --color-on-primary: #ffffff;
+  --color-on-surface-variant: #544244;
+  --color-on-tertiary-fixed: #22191c;
+  --color-surface-dim: #dcd9d9;
+  --color-tertiary-container: #362c2f;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-secondary-fixed-variant: #5d4201;
+
+  --spacing-gutter: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-margin-mobile: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-margin: 1.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-3xl: 6rem;
+  --spacing-gutter-mobile: 1rem;
+  --spacing-space-2xl: 4rem;
+  --spacing-margin-desktop: 3rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-gutter-desktop: 2rem;
+  --spacing-space-xs: 0.25rem;
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-display-mobile: "Playfair Display", Georgia, serif;
+  --font-headline-lg: "Playfair Display", Georgia, serif;
+  --font-headline-lg-mobile: "Playfair Display", Georgia, serif;
+  --font-headline-md: "Playfair Display", Georgia, serif;
+  --font-headline-sm: "Playfair Display", Georgia, serif;
+  --font-title-lg: "Playfair Display", Georgia, serif;
+  --font-title-md: "Plus Jakarta Sans", sans-serif;
+  --font-body-lg: "Plus Jakarta Sans", sans-serif;
+  --font-body-md: "Plus Jakarta Sans", sans-serif;
+  --font-body-sm: "Plus Jakarta Sans", sans-serif;
+  --font-label-lg: "Plus Jakarta Sans", sans-serif;
+  --font-label-md: "Plus Jakarta Sans", sans-serif;
+  --font-label-sm: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer utilities {
+  .text-display {
+    font-size: 3.5rem;
+    line-height: 4.25rem;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+  .text-display-mobile {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+  }
+  .text-headline-lg {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+  }
+  .text-headline-lg-mobile {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    letter-spacing: 0em;
+    font-weight: 600;
+  }
+  .text-headline-md {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+  }
+  .text-headline-sm {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+  }
+  .text-title-lg {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+  .text-title-md {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    letter-spacing: 0.01em;
+    font-weight: 600;
+  }
+  .text-body-lg {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    font-weight: 400;
+  }
+  .text-body-md {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    font-weight: 400;
+  }
+  .text-body-sm {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+  .text-label-lg {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+  }
+  .text-label-md {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+  }
+  .text-label-sm {
+    font-size: 0.6875rem;
+    line-height: 0.875rem;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  user-select: none;
+}
+
+.material-symbols-filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
